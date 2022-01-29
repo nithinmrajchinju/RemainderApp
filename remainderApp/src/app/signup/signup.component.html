@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <h1></h1>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Id</label>
+            <input type="text" class="form-control" id="id" #id>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" #username>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" #password>
+          </div>
+          <div class="row d-grid gap-2">
+            <button (click)="signup(id,username,password)" type="submit" class="btn btn-primary">signup</button>
+          </div>
+        </form>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>

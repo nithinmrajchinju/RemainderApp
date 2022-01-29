@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <h1></h1>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Event Name</label>
+            <input type="text" class="form-control" id="eventname" #eventname>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Event Time</label>
+            <input type="text" class="form-control" id="eventtime" #eventtime>
+          </div>
+          <div class="row d-grid gap-2">
+            <button (click)="add(eventname,eventtime)" type="submit" class="btn btn-primary">Add</button>
+            <button (click)="back()" class="btn btn-secondary">back</button>
+          </div>
+        </form>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
